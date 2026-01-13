@@ -66,7 +66,14 @@ class PersonalDetails:
         logger.info("Clicking Save button")
         save_button.click()
 
+    def click_personal_details(self):
+        logger.info("Waiting for form loader to disappear")
+        self.driver.find_element(By.LINK_TEXT,"Personal Details").click()
+        wait_for_loader_to_disappear(self.driver)
+        logger.info("Personal Details Page loaded ")
+
     def profile_name(self):
+        logger.info("Waiting for form loader to disappear")
         element = WebDriverWait(self.driver, 10).until(
         EC.visibility_of_element_located(
             (By.XPATH, "//div[@class='orangehrm-edit-employee-name']/h6")))

@@ -1,76 +1,79 @@
-2026-01-12 16:35:10 | INFO | WDM | ====== WebDriver manager ======
-2026-01-12 16:35:11 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:35:12 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:35:13 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
-2026-01-12 16:35:21 | INFO | pages.immigration | Clicked My Info
-2026-01-12 16:35:33 | INFO | pages.immigration | My Info page loaded 
-2026-01-12 16:35:44 | INFO | pages.immigration | Immigration page loaded 
-2026-01-12 16:35:47 | INFO | WDM | ====== WebDriver manager ======
-2026-01-12 16:35:48 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:35:49 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:35:50 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
-2026-01-12 16:35:57 | INFO | root | Login Successful
-2026-01-12 16:35:59 | INFO | WDM | ====== WebDriver manager ======
-2026-01-12 16:36:01 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:36:02 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:36:02 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
-2026-01-12 16:36:10 | INFO | pages.personaldetails | Clicked My Info, waiting for First Name field
-2026-01-12 16:36:10 | INFO | pages.personaldetails | Waiting for loader before interacting with First Name
-2026-01-12 16:36:23 | INFO | pages.personaldetails | Clearing existing First Name
-2026-01-12 16:36:23 | INFO | pages.personaldetails | Entering First Name: Peter
-2026-01-12 16:36:23 | INFO | pages.personaldetails | Waiting for form loader to disappear
-2026-01-12 16:36:33 | INFO | pages.personaldetails | Form loader gone, waiting for Save button to be clickable
-2026-01-12 16:36:33 | INFO | pages.personaldetails | Clicking Save button
-2026-01-12 16:36:33 | INFO | tests.test_orangehrm | Profilename: Peter Thomson
-2026-01-12 16:36:36 | INFO | WDM | ====== WebDriver manager ======
-2026-01-12 16:36:37 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:36:38 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:36:39 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
-2026-01-12 16:36:47 | INFO | pages.contactdetails | Clicked My Info
-2026-01-12 16:36:59 | INFO | pages.contactdetails | My Info page loaded 
-2026-01-12 16:37:12 | INFO | pages.contactdetails | Contact Details Page loaded 
-2026-01-12 16:37:13 | INFO | pages.contactdetails | Waiting for form loader to disappear
-2026-01-12 16:37:23 | INFO | pages.contactdetails | Form loader gone, waiting for Save button to be clickable
-2026-01-12 16:37:24 | INFO | pages.contactdetails | Clicking Save button
-2026-01-12 16:37:24 | INFO | tests.test_orangehrm | Street Name: 251 penn avenue
-2026-01-12 16:37:24 | INFO | tests.test_orangehrm | Mobile Number: 9878908765
-2026-01-12 16:37:26 | INFO | WDM | ====== WebDriver manager ======
-2026-01-12 16:37:28 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:37:28 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:37:29 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
-2026-01-12 16:37:37 | INFO | pages.dependents | Clicked My Info
-2026-01-12 16:37:49 | INFO | pages.dependents | My Info page loaded 
-2026-01-12 16:38:00 | INFO | pages.dependents | Dependents Page is loaded 
-2026-01-12 16:38:11 | INFO | pages.dependents | Waiting for form loader to disappear
-2026-01-12 16:38:21 | INFO | pages.dependents | Form loader gone, waiting for Save button to be clickable
-2026-01-12 16:38:21 | INFO | pages.dependents | Clicking Save button
-2026-01-12 16:38:32 | INFO | pages.dependents | Dependents Page is loaded 
-2026-01-12 16:38:43 | INFO | pages.dependents | Waiting for form loader to disappear
-2026-01-12 16:38:53 | INFO | pages.dependents | Form loader gone, waiting for Save button to be clickable
-2026-01-12 16:38:53 | INFO | pages.dependents | Clicking Save button
-2026-01-12 16:39:04 | INFO | pages.dependents | Dependents Page is loaded 
-2026-01-12 16:39:05 | INFO | pages.dependents | ['AChild1', 'AChild2']
-2026-01-12 16:39:07 | INFO | WDM | ====== WebDriver manager ======
-2026-01-12 16:39:08 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:39:09 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:39:10 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
-2026-01-12 16:39:28 | INFO | pages.immigration | Clicked My Info
-2026-01-12 16:39:33 | INFO | pages.immigration | My Info page loaded 
-2026-01-12 16:39:45 | INFO | pages.immigration | Immigration page loaded 
-2026-01-12 16:39:56 | INFO | pages.immigration | Waiting for form loader to disappear
-2026-01-12 16:40:06 | INFO | pages.immigration | Form loader gone, waiting for Save button to be clickable
-2026-01-12 16:40:06 | INFO | pages.immigration | Clicking Save button
-2026-01-12 16:40:17 | INFO | pages.immigration | Immigration page loaded 
-2026-01-12 16:40:18 | INFO | pages.immigration | ['34', 'P12432', 'sum is simply dummy text of the printing', '']
-2026-01-12 16:40:20 | INFO | WDM | ====== WebDriver manager ======
-2026-01-12 16:40:21 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:40:22 | INFO | WDM | Get LATEST chromedriver version for google-chrome
-2026-01-12 16:40:23 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
-2026-01-12 16:40:32 | INFO | pages.immigration | Clicked My Info
-2026-01-12 16:40:45 | INFO | pages.immigration | My Info page loaded 
-2026-01-12 16:40:56 | INFO | pages.immigration | Immigration page loaded 
-2026-01-12 16:41:06 | INFO | pages.immigration | Waiting for form loader to disappear
-2026-01-12 16:41:16 | INFO | pages.immigration | Form loader gone, waiting for Save button to be clickable
-2026-01-12 16:41:16 | INFO | pages.immigration | Clicking Save button
-2026-01-12 16:41:27 | INFO | pages.immigration | Immigration page loaded 
-2026-01-12 16:41:27 | INFO | pages.immigration | ['Immigration.txt', 'Passport_test.txt', 'Passport_test.txt']
+2026-01-13 11:25:29 | INFO | WDM | ====== WebDriver manager ======
+2026-01-13 11:25:30 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:25:31 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:25:32 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
+2026-01-13 11:25:39 | INFO | pages.immigration | Clicked My Info
+2026-01-13 11:25:41 | INFO | pages.immigration | My Info page loaded 
+2026-01-13 11:25:52 | INFO | pages.immigration | Immigration page loaded 
+2026-01-13 11:25:54 | INFO | WDM | ====== WebDriver manager ======
+2026-01-13 11:25:56 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:25:56 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:25:57 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
+2026-01-13 11:26:03 | INFO | root | Login Successful
+2026-01-13 11:26:05 | INFO | WDM | ====== WebDriver manager ======
+2026-01-13 11:26:06 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:26:07 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:26:08 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
+2026-01-13 11:26:16 | INFO | pages.personaldetails | Clicked My Info, waiting for First Name field
+2026-01-13 11:26:16 | INFO | pages.personaldetails | Waiting for loader before interacting with First Name
+2026-01-13 11:26:28 | INFO | pages.personaldetails | Clearing existing First Name
+2026-01-13 11:26:28 | INFO | pages.personaldetails | Entering First Name: Peter
+2026-01-13 11:26:28 | INFO | pages.personaldetails | Waiting for form loader to disappear
+2026-01-13 11:26:38 | INFO | pages.personaldetails | Form loader gone, waiting for Save button to be clickable
+2026-01-13 11:26:38 | INFO | pages.personaldetails | Clicking Save button
+2026-01-13 11:26:38 | INFO | pages.personaldetails | Waiting for form loader to disappear
+2026-01-13 11:26:51 | INFO | pages.personaldetails | Personal Details Page loaded 
+2026-01-13 11:26:51 | INFO | pages.personaldetails | Waiting for form loader to disappear
+2026-01-13 11:26:51 | INFO | tests.test_orangehrm | Profilename: Peter Thomson
+2026-01-13 11:26:54 | INFO | WDM | ====== WebDriver manager ======
+2026-01-13 11:26:55 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:26:56 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:26:56 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
+2026-01-13 11:27:04 | INFO | pages.contactdetails | Clicked My Info
+2026-01-13 11:27:16 | INFO | pages.contactdetails | My Info page loaded 
+2026-01-13 11:27:27 | INFO | pages.contactdetails | Contact Details Page loaded 
+2026-01-13 11:27:29 | INFO | pages.contactdetails | Waiting for form loader to disappear
+2026-01-13 11:27:39 | INFO | pages.contactdetails | Form loader gone, waiting for Save button to be clickable
+2026-01-13 11:27:39 | INFO | pages.contactdetails | Clicking Save button
+2026-01-13 11:27:39 | INFO | tests.test_orangehrm | Street Name: 251 penn avenue
+2026-01-13 11:27:39 | INFO | tests.test_orangehrm | Mobile Number: 9878908765
+2026-01-13 11:27:42 | INFO | WDM | ====== WebDriver manager ======
+2026-01-13 11:27:43 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:27:44 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:27:45 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
+2026-01-13 11:27:53 | INFO | pages.dependents | Clicked My Info
+2026-01-13 11:28:05 | INFO | pages.dependents | My Info page loaded 
+2026-01-13 11:28:16 | INFO | pages.dependents | Dependents Page is loaded 
+2026-01-13 11:28:27 | INFO | pages.dependents | Waiting for form loader to disappear
+2026-01-13 11:28:37 | INFO | pages.dependents | Form loader gone, waiting for Save button to be clickable
+2026-01-13 11:28:37 | INFO | pages.dependents | Clicking Save button
+2026-01-13 11:28:48 | INFO | pages.dependents | Dependents Page is loaded 
+2026-01-13 11:28:59 | INFO | pages.dependents | Waiting for form loader to disappear
+2026-01-13 11:29:09 | INFO | pages.dependents | Form loader gone, waiting for Save button to be clickable
+2026-01-13 11:29:09 | INFO | pages.dependents | Clicking Save button
+2026-01-13 11:29:21 | INFO | pages.dependents | Dependents Page is loaded 
+2026-01-13 11:29:21 | INFO | pages.dependents | ['AAChild1', 'AAChild1', 'AAChild2', 'AAChild2']
+2026-01-13 11:29:23 | INFO | WDM | ====== WebDriver manager ======
+2026-01-13 11:29:25 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:29:25 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:29:26 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
+2026-01-13 11:29:34 | INFO | pages.immigration | Clicked My Info
+2026-01-13 11:29:46 | INFO | pages.immigration | My Info page loaded 
+2026-01-13 11:29:57 | INFO | pages.immigration | Immigration page loaded 
+2026-01-13 11:30:09 | INFO | pages.immigration | Waiting for form loader to disappear
+2026-01-13 11:30:19 | INFO | pages.immigration | Form loader gone, waiting for Save button to be clickable
+2026-01-13 11:30:19 | INFO | pages.immigration | Clicking Save button
+2026-01-13 11:30:30 | INFO | pages.immigration | Immigration page loaded 
+2026-01-13 11:30:30 | INFO | pages.immigration | ['34', 'P12432', 'P12432', 'sum is simply dummy text of the printing', '']
+2026-01-13 11:30:33 | INFO | WDM | ====== WebDriver manager ======
+2026-01-13 11:30:34 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:30:35 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-01-13 11:30:35 | INFO | WDM | Driver [C:\Users\Sijil Kadavath\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
+2026-01-13 11:30:43 | INFO | pages.immigration | Clicked My Info
+2026-01-13 11:30:55 | INFO | pages.immigration | My Info page loaded 
+2026-01-13 11:31:05 | INFO | pages.immigration | Immigration page loaded 
+2026-01-13 11:31:16 | INFO | pages.immigration | Waiting for form loader to disappear
+2026-01-13 11:31:26 | INFO | pages.immigration | Form loader gone, waiting for Save button to be clickable
+2026-01-13 11:31:26 | INFO | pages.immigration | Clicking Save button
+2026-01-13 11:31:37 | INFO | pages.immigration | Immigration page loaded 
+2026-01-13 11:31:37 | INFO | pages.immigration | ['Immigration.txt', 'Passport_test.txt', 'Passport_test.txt']

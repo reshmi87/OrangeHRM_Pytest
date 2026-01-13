@@ -3,14 +3,14 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from pathlib import Path
+from utils.config_reader import ConfigReader
 
 
 def launch_browser():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     driver.maximize_window()
-    driver.get("https://opensource-demo.orangehrmlive.com/")
+    driver.get(ConfigReader.get("app", "url"))
     return driver
-
 
 def browser_for_download():
     
@@ -30,6 +30,6 @@ def browser_for_download():
         options=chrome_options
     )
     driver.maximize_window()
-    driver.get("https://opensource-demo.orangehrmlive.com/")
+    driver.get(ConfigReader.get("app", "url"))
     return driver, DOWNLOAD_FOLDER
 

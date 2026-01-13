@@ -14,6 +14,7 @@ import os
 import time
 import logging
 from utils.logger_config import get_logger
+from utils.config_reader import ConfigReader
 
 logger = logging.getLogger(__name__)
 
@@ -28,7 +29,8 @@ def browser():
 def logged_in_browser(browser):
     login_page = LoginPage(browser)
     login_page.enter_username("Admin")
-    login_page.enter_password("admin123")
+    login_page.enter_username(ConfigReader.get("credentials", "username"))
+    login_page.enter_password(ConfigReader.get("credentials", "password"))
     login_page.click_login()
     return browser
 
@@ -39,32 +41,36 @@ def test_login_page(logged_in_browser):
 def test_firstname_lastname(logged_in_browser):
     personaldetails = PersonalDetails(logged_in_browser)
     personaldetails.click_myinfo()
-    personaldetails.enter_firstname("Peter")
-    personaldetails.enter_lastname("Thomson")
+    personaldetails.enter_firstname(ConfigReader.get("testdata", "firstname"))
+    personaldetails.enter_lastname(ConfigReader.get("testdata", "lastname"))
     personaldetails.save_names()
+    personaldetails.click_personal_details()
     profilename = personaldetails.profile_name()
     logger.info("Profilename: %s", profilename)
-    assert profilename == "Peter Thomson"
+    expected_name = (
+    ConfigReader.get("testdata", "firstname") + " " +
+    ConfigReader.get("testdata", "lastname"))
+    assert profilename == expected_name
 
 def test_contact_details(logged_in_browser):
     contactdetails = ContactDetails(logged_in_browser)
     contactdetails.click_myinfo()
     contactdetails.click_contact_details()
-    contactdetails.enter_street1("251 penn avenue")
-    contactdetails.enter_city("Austin")
-    contactdetails.enter_state("Texas")
-    contactdetails.enter_zip("76856")
+    contactdetails.enter_street1(ConfigReader.get("testdata", "street1"))
+    contactdetails.enter_city(ConfigReader.get("testdata", "city"))
+    contactdetails.enter_state(ConfigReader.get("testdata", "state"))
+    contactdetails.enter_zip(ConfigReader.get("testdata", "zip"))
     contactdetails.click_country()
     contactdetails.select_country()
-    contactdetails.enter_homephone("678965567")
-    contactdetails.enter_mobilephone("9878908765")
+    contactdetails.enter_homephone(ConfigReader.get("testdata", "homephone"))
+    contactdetails.enter_mobilephone(ConfigReader.get("testdata", "mobile"))
     contactdetails.save_contact()
     street= contactdetails.check_street()
     logger.info("Street Name: %s", street)
-    assert street == "251 penn avenue"
+    assert street == ConfigReader.get("testdata", "street1")
     mobile= contactdetails.check_mobile()
     logger.info("Mobile Number: %s",mobile)
-    assert mobile == "9878908765"
+    assert mobile == ConfigReader.get("testdata", "mobile")
 
 def test_dependents(logged_in_browser):
     dependents = Dependants(logged_in_browser)
@@ -72,36 +78,36 @@ def test_dependents(logged_in_browser):
     dependents.click_dependents()
     # For Dependent1   
     dependents.click_add_dependents()
-    dependents.enter_name("AChild1")
+    dependents.enter_name(ConfigReader.get("testdata", "child1"))
     dependents.select_relationship()
-    dependents.enter_dob("2011-08-08")
+    dependents.enter_dob(ConfigReader.get("testdata", "child1dob"))
     dependents.save_dependent()
      # For Dependent2
     dependents.click_dependents()
     dependents.click_add_dependents()
-    dependents.enter_name("AChild2")
+    dependents.enter_name(ConfigReader.get("testdata", "child2"))
     dependents.select_relationship()
-    dependents.enter_dob("2020-01-01")
+    dependents.enter_dob(ConfigReader.get("testdata", "child2dob"))
     dependents.save_dependent()
     dependents.click_dependents()
     listofdependents = dependents.get_all_dependents()
-    assert "AChild1" in listofdependents
-    assert "AChild2" in listofdependents 
+    assert ConfigReader.get("testdata", "child1") in listofdependents
+    assert ConfigReader.get("testdata", "child1") in listofdependents 
 
 def test_immigration(logged_in_browser):
     immigration = Immigration(logged_in_browser)
     immigration.click_myinfo()
     immigration.click_immigration()
     immigration.add_immigration()
-    immigration.add_number("P12432")
-    immigration.add_issued_date("2020-01-01")
-    immigration.add_expiry_date("2030-01-01")
-    immigration.add_eligibility("Valid")
+    immigration.add_number(ConfigReader.get("testdata", "number"))
+    immigration.add_issued_date(ConfigReader.get("testdata", "issueddate"))
+    immigration.add_expiry_date(ConfigReader.get("testdata", "expirydate"))
+    immigration.add_eligibility(ConfigReader.get("testdata", "eligibility"))
     immigration.select_issued_country()
     immigration.save_immigration()
     immigration.click_immigration()
     immigration_list = immigration.get_all_immigration()
-    assert "P12432" in immigration_list
+    assert ConfigReader.get("testdata", "number") in immigration_list
 
 def test_addimmigrationdocument(logged_in_browser):
     immigration = Immigration(logged_in_browser)
@@ -109,9 +115,9 @@ def test_addimmigrationdocument(logged_in_browser):
     immigration.click_immigration() 
     immigration.click_addattachments()
     PROJECT_ROOT = Path(__file__).resolve().parent.parent
-    file_path = PROJECT_ROOT / "test_data" / "upload_files" / "Passport_test.txt"
+    file_path = PROJECT_ROOT / "test_data" / "upload_files" / ConfigReader.get("testdata", "filename")
     immigration.enter_file_path(file_path)
     immigration.save_upload_file()
     immigration.click_immigration()
     immigration_files_list = immigration.get_allfiles
-    assert "Passport_test.txt" in immigration_files_list()
+    assert ConfigReader.get("testdata", "filename") in immigration_files_list()
