@@ -1,0 +1,6 @@
+{
+    "python.sortImports.args": [
+        "--dont-sort"
+    ],
+    "editor.formatOnSave": false
+}
